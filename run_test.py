@@ -12,8 +12,8 @@ def test(did_pass):
     print(msg)
 
 
-
-test(menu() == print('Temperatur Converter\n1. Celcius to Fahrenheit\n2. Fahrenheit to Celcius\n3. Quit\n'))
 test(Conversion.CtoF(Conversion(0)) == 32)
 test(Conversion.FtoC(Conversion(32)) == 0)
 test(Conversion.CtoF(Conversion(-40)) == -40)
+test(menu() == print('Temperatur Converter\n1. Celcius to Fahrenheit\n2. Fahrenheit to Celcius\n3. Quit\n'))
+
