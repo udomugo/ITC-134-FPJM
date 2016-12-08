@@ -1,6 +1,6 @@
 import sys
 
-from finalProject import menu, Conversion, main
+from conversion import menu, Conversion, main
 
 def test(did_pass):
     ''' Print the result of a test. '''
@@ -10,10 +10,7 @@ def test(did_pass):
     else:
         msg = ('Test at line {0} FAILED.'.format(linenum))
     print(msg)
-
-
-test(Conversion.CtoF(Conversion(0)) == 32)
-test(Conversion.FtoC(Conversion(32)) == 0)
-test(Conversion.CtoF(Conversion(-40)) == -40)
-test(menu() == print('Temperatur Converter\n1. Celcius to Fahrenheit\n2. Fahrenheit to Celcius\n3. Quit\n'))
-
+#test(menu() == print('BOB Blob Temperatur Converter\n1. Celcius to Fahrenheit\n2. Fahrenheit to Celcius\n3. Quit\n'))
+test(Conversion.CtoF(Conversion(0))==32)
+test(Conversion.FtoC(Conversion(32))==0)
+test(Conversion.CtoF(Conversion(-40))==-40)
