@@ -1,6 +1,6 @@
 import sys
 
-from conversion import menu, Conversion, main
+from conversion import Conversion
 
 def test(did_pass):
     ''' Print the result of a test. '''
